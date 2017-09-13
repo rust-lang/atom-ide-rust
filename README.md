@@ -1,5 +1,5 @@
 # IDE-Rust
-> Rust language support for Atom, powered by the Rust Langauge Server (RLS)
+> Rust IDE support for Atom, powered by the Rust Langauge Server (RLS)
 
 ## Features
  - Auto-completion
@@ -8,8 +8,7 @@
  - Document outline
  - Go to definition (`ctrl` or `cmd` click)
  - Type information and Documentation on hover (hold `ctrl` or `cmd` for more information)
- - Find references
- 
+
 ## Install
 
 You can install from the command line with:
