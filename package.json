@@ -2,23 +2,20 @@
   "name": "ide-rust",
   "main": "./lib/index",
   "version": "0.2.0",
-  "description": "Rust IDE support for Atom, powered by the Rust Langauge Server (RLS)",
+  "description":
+    "Rust IDE support for Atom, powered by the Rust Langauge Server (RLS)",
   "repository": "https://github.com/mehcode/atom-ide-rust",
   "license": "MIT",
-  "keywords": [
-    "rust",
-    "rls",
-    "ide"
-  ],
+  "keywords": ["rust", "rls", "ide"],
+  "package-deps": ["language-rust", "atom-ide-ui"],
   "engines": {
     "atom": ">=1.21.0"
   },
   "dependencies": {
-    "atom-languageclient": "^0.6.1"
+    "atom-languageclient": "^0.6.1",
+    "atom-package-deps": "^4.6.0"
   },
-  "enhancedScopes": [
-    "source.rust"
-  ],
+  "enhancedScopes": ["source.rust"],
   "consumedServices": {
     "linter-indie": {
       "versions": {
