@@ -1,5 +1,5 @@
 # IDE-Rust
-> Rust IDE support for Atom, powered by the Rust Langauge Server (RLS)
+> Rust IDE support for Atom, powered by the Rust Language Server (RLS)
 
 ## Features
  - Auto-completion
