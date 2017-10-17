@@ -9,12 +9,6 @@
  - Go to definition (`ctrl` or `cmd` click)
  - Type information and Documentation on hover (hold `ctrl` or `cmd` for more information)
 
-### Toolchain
-
-`ide-rust` will use your default toolchain if you have one, or install the `stable` toolchain and set that as default otherwise.
-
-RLS requires a toolchain with version at least 1.21.
-
 ## Install
 
 You can install from the command line with:
