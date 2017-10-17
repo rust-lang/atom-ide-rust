@@ -18,7 +18,7 @@
     "atom": ">=1.21.0"
   },
   "dependencies": {
-    "atom-languageclient": "^0.6.1",
+    "atom-languageclient": "^0.6.4",
     "atom-package-deps": "^4.6.0"
   },
   "enhancedScopes": [
