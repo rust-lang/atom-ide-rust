@@ -18,8 +18,10 @@
     "atom": ">=1.21.0"
   },
   "dependencies": {
-    "atom-languageclient": "^0.6.4",
-    "atom-package-deps": "^4.6.0"
+    "atom-languageclient": "^0.6.5",
+    "atom-package-deps": "^4.6.0",
+    "toml": "^2.3.3",
+    "underscore-plus": "^1.6.6"
   },
   "enhancedScopes": [
     "source.rust"
