@@ -1,7 +1,7 @@
 {
   "name": "ide-rust",
   "main": "./lib/index",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "Rust IDE support for Atom, powered by the Rust Langauge Server (RLS)",
   "repository": "https://github.com/mehcode/atom-ide-rust",
   "license": "MIT",
