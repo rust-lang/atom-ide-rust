@@ -9,6 +9,10 @@
  - Go to definition (`ctrl` or `cmd` click)
  - Type information and Documentation on hover (hold `ctrl` or `cmd` for more information)
  - Rls configuration using `rls.toml` file at project root, see [rls#configuration](https://github.com/rust-lang-nursery/rls#configuration)
+   ```toml
+   # rls.toml
+   features = ["serde"]
+   ```
 
 ## Install
 
@@ -19,6 +23,19 @@ $ apm install ide-rust
 ```
 
 Or you can install from Settings view by searching for `ide-rust`.
+
+
+## Overriding Rls
+The Rls command can be specified manually, for example to run from local source code:
+```cson
+# config.cson
+  ...
+  "ide-rust":
+    rlsCommandOverride: "rustup run nightly cargo run --manifest-path=/rls-src/Cargo.toml --release"
+```
+When set you'll be able to see, and remove, this from the package settings. After restarting atom an info message will inform you the override is in place.
+
+![](https://image.ibb.co/jsR65w/rls_Command_Override_Info.png)
 
 ## License
 
