@@ -36,6 +36,11 @@
       "versions": {
         "0.1.0": "consumeDatatip"
       }
+    },
+    "atom-ide-busy-signal": {
+      "versions": {
+        "0.1.0": "consumeBusySignal"
+      }
     }
   },
   "providedServices": {
