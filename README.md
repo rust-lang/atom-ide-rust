@@ -1,5 +1,5 @@
 # IDE-Rust
-> Rust IDE support for Atom, powered by the Rust Language Server (RLS)
+Rust language support for Atom-IDE, powered by the Rust Language Server (RLS).
 
 ## Features
  - Auto-completion
@@ -8,6 +8,7 @@
  - Document outline
  - Go to definition (`ctrl` or `cmd` click)
  - Type information and Documentation on hover (hold `ctrl` or `cmd` for more information)
+ - Rls toolchain selection in package settings
  - Rls configuration using `rls.toml` file at project root, see [rls#configuration](https://github.com/rust-lang-nursery/rls#configuration)
    ```toml
    # rls.toml
