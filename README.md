@@ -38,6 +38,14 @@ When set you'll be able to see, and remove, this from the package settings. Afte
 
 ![](https://image.ibb.co/jsR65w/rls_Command_Override_Info.png)
 
+## Debugging
+If stuff isn't working you can try **enabling logging** to debug:
+  * Open the atom console _(ctrl-shift-i)_
+  * Enter `atom.config.set('core.debugLSP', true)`
+  * Reload atom _(ctrl-shift-F5)_
+
+This will spit out language server message logging into the atom console. Check if requests/responses are being sent or are incorrect. It will also include any Rls stderr messages (as warnings) which may point to Rls bugs.
+
 ## License
 
 MIT License. See the [license](LICENSE) for more details.
