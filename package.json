@@ -18,8 +18,8 @@
     "atom": ">=1.21.0"
   },
   "dependencies": {
-    "atom-languageclient": "^0.7.2",
-    "atom-package-deps": "^4.6.0",
+    "atom-languageclient": "^0.7.3",
+    "atom-package-deps": "^4.6.1",
     "toml": "^2.3.3",
     "underscore-plus": "^1.6.6"
   },
