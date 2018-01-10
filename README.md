@@ -16,9 +16,6 @@ Rust language support for Atom-IDE, powered by the Rust Language Server (RLS).
    features = ["serde"]
    ```
 
-## Prerequisites
-[rustup](https://www.rustup.rs) is required; used to install and manage the Rls toolchains.
-
 ## Install
 You can install from the command line with:
 ```
