@@ -9,6 +9,7 @@ Rust language support for Atom-IDE, powered by the Rust Language Server (RLS).
  - Go to definition (`ctrl` or `cmd` click)
  - Type information and Documentation on hover (hold `ctrl` or `cmd` for more information)
  - Rls toolchain selection in package settings
+ - Rls toolchain update checking at startup
  - Rls configuration using `rls.toml` file at project root, see [rls#configuration](https://github.com/rust-lang-nursery/rls#configuration)
    ```toml
    # rls.toml
@@ -16,15 +17,13 @@ Rust language support for Atom-IDE, powered by the Rust Language Server (RLS).
    ```
 
 ## Install
-
 You can install from the command line with:
-
 ```
 $ apm install ide-rust
 ```
-
 Or you can install from Settings view by searching for `ide-rust`.
 
+No other packages or manual setup is required as these will be handled with user prompts after install.
 
 ## Overriding Rls
 The Rls command can be specified manually, for example to run from local source code:
@@ -47,5 +46,4 @@ If stuff isn't working you can try **enabling logging** to debug:
 This will spit out language server message logging into the atom console. Check if requests/responses are being sent or are incorrect. It will also include any Rls stderr messages (as warnings) which may point to Rls bugs.
 
 ## License
-
 MIT License. See the [license](LICENSE) for more details.
