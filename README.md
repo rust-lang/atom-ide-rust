@@ -25,6 +25,22 @@ Or you can install from Settings view by searching for `ide-rust`.
 
 No other packages or manual setup is required as these will be handled with user prompts after install.
 
+## Multi-crate projects
+A root `Cargo.toml` is required in each atom project, however cargo workspaces can be used to support multiple crates in a single project. For example, a project with _'rust_foo'_ & _'rust_bar'_ crates could have the following root `Cargo.toml`
+```toml
+# Cargo.toml
+[workspace]
+members = [
+    "rust_foo",
+    "rust_bar",
+]
+```
+Rls does not currently support workspaces by default, so this must be manually enabled:
+```toml
+# rls.toml
+workspace_mode = true
+```
+
 ## Overriding Rls
 The Rls command can be specified manually, for example to run from local source code:
 ```cson
