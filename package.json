@@ -23,6 +23,12 @@
     "toml": "^2.3.3",
     "underscore-plus": "^1.6.6"
   },
+  "devDependencies": {
+    "eslint": "^4.16.0"
+  },
+  "scripts": {
+    "test": "eslint lib test --max-warnings 0"
+  },
   "enhancedScopes": [
     "source.rust"
   ],
