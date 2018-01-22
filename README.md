@@ -15,6 +15,9 @@ Rust language support for Atom-IDE, powered by the Rust Language Server (RLS).
    # rls.toml
    features = ["serde"]
    ```
+ - Graceful handling of Rls being missing from the distribution _(which is somewhat common on the nightly channel)_
+   * Warns before installing a rust version without Rls or when using an already installed one
+   * Automatic detection of, and prompt to install, the latest working dated release
 
 ## Install
 You can install from the command line with:
