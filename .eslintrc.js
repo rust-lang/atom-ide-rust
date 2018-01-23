@@ -6,8 +6,13 @@ module.exports = {
     browser: true,
   },
   rules: {
-    semi: ["error", "never"],
+    semi: ["warn", "never"],
     "no-console": "off",
+    "valid-jsdoc": ["warn", {
+      requireParamDescription: false,
+      requireReturn: false,
+      requireReturnDescription: false,
+    }],
   },
   globals: {
     atom: true,
