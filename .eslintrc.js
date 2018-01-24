@@ -1,5 +1,8 @@
 module.exports = {
   extends: ["eslint:recommended"],
+  parserOptions: {
+    ecmaVersion: 2017,
+  },
   env: {
     es6: true,
     node: true,
@@ -7,7 +10,8 @@ module.exports = {
   },
   rules: {
     semi: ["warn", "never"],
-    "no-console": "off",
+    "no-unused-vars": "warn",
+    "no-console": ["warn", { allow: ["info", "warn", "error"] }],
     "valid-jsdoc": ["warn", {
       requireParamDescription: false,
       requireReturn: false,
