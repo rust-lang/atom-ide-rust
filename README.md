@@ -1,6 +1,8 @@
 # IDE-Rust
 Rust language support for Atom-IDE, powered by the Rust Language Server (RLS).
 
+![](http://image.ibb.co/gwfQTm/output.gif "Usage Jan-2018")
+
 ## Features
  - Auto-completion
  - Format on save (disabled by default, see `atom-ide-ui` settings)
@@ -29,7 +31,8 @@ Or you can install from Settings view by searching for `ide-rust`.
 No other packages or manual setup is required as these will be handled with user prompts after install.
 
 ## Multi-crate projects
-A root `Cargo.toml` is required in each atom project, however cargo workspaces can be used to support multiple crates in a single project. For example, a project with _'rust_foo'_ & _'rust_bar'_ directories/crates could have the following root `Cargo.toml`
+A root `Cargo.toml` is required in each atom project, however cargo workspaces can be used to support multiple crates in a single project.
+For example, a project with *'rust_foo'* & *'rust_bar'* directories/crates could have the following root `Cargo.toml`
 ```toml
 # Cargo.toml
 [workspace]
@@ -38,11 +41,6 @@ members = [
     "rust_bar",
 ]
 ```
-Rls does not currently support workspaces by default, so this must be manually enabled:
-```toml
-# rls.toml
-workspace_mode = true
-```
 
 ## Overriding Rls
 The Rls command can be specified manually, for example to run from local source code:
@@ -50,7 +48,7 @@ The Rls command can be specified manually, for example to run from local source 
 # config.cson
   ...
   "ide-rust":
-    rlsCommandOverride: "rustup run nightly cargo run --manifest-path=/rls-src/Cargo.toml --release"
+    rlsCommandOverride: "cargo +nightly run --manifest-path=/rls-src/Cargo.toml"
 ```
 When set you'll be able to see, and remove, this from the package settings. After restarting atom an info message will inform you the override is in place.
 
