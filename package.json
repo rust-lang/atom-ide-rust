@@ -18,13 +18,13 @@
     "atom": ">=1.21.0"
   },
   "dependencies": {
-    "atom-languageclient": "^0.8.2",
+    "atom-languageclient": "^0.8.3",
     "atom-package-deps": "^4.6.1",
     "toml": "^2.3.3",
     "underscore-plus": "^1.6.6"
   },
   "devDependencies": {
-    "eslint": "^4.16.0"
+    "eslint": "^4.17.0"
   },
   "scripts": {
     "test": "eslint lib test --max-warnings 0"
