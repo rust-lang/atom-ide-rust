@@ -1,5 +1,9 @@
 language: node_js
-node_js: node
+node_js:
+  - node
+  - lts/*
+  # atom/electron 1.6.x uses node 7.x
+  - 7
 cache:
   directories:
   - "node_modules"
