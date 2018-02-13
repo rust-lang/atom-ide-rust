@@ -30,6 +30,9 @@ Or you can install from Settings view by searching for `ide-rust`.
 
 No other packages or manual setup is required as these will be handled with user prompts after install.
 
+## Commands
+- `ide-rust:restart-all-language-servers` Restart all currently active Rls processes
+
 ## Multi-crate projects
 A root `Cargo.toml` is required in each atom project, however cargo workspaces can be used to support multiple crates in a single project.
 For example, a project with *'rust_foo'* & *'rust_bar'* directories/crates could have the following root `Cargo.toml`
