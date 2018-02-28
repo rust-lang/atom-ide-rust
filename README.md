@@ -28,7 +28,7 @@ $ apm install ide-rust
 ```
 Or you can install from Settings view by searching for `ide-rust`.
 
-No other packages or manual setup is required as these will be handled with user prompts after install.
+No other packages or manual setup is required as these will be handled with user prompts after install. However, you may wish to install `rustup` with your OS package manager instead of following prompts to install via [rustup.rs](https://rustup.rs).
 
 ## Commands
 - `ide-rust:restart-all-language-servers` Restart all currently active Rls processes
@@ -57,7 +57,7 @@ When set you'll be able to see, and remove, this from the package settings. Afte
 
 ![](https://image.ibb.co/jsR65w/rls_Command_Override_Info.png)
 
-## Debugging
+## Debugging IDE-Rust
 If stuff isn't working you can try **enabling logging** to debug:
   * Open the atom console _(ctrl-shift-i)_
   * Enter `atom.config.set('core.debugLSP', true)`
