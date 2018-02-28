@@ -5,12 +5,12 @@ Rust language support for Atom-IDE, powered by the Rust Language Server (RLS).
 
 ## Features
  - Auto-completion
- - Diagnostics (errors and warnings from `rustc`, support for `clippy` is pending on https://github.com/rust-lang-nursery/rls/issues/149)
+ - Diagnostics (errors and warnings from `rustc`, `clippy` support is pending on [rls#149](https://github.com/rust-lang-nursery/rls/issues/149))
  - Document outline
  - Go to definition (`ctrl` or `cmd` click)
  - Type information and Documentation on hover (hold `ctrl` or `cmd` for more information)
- - Find references (`ctrl-alt-shift-f` or in right-click menu)
- - Format file with rustfmt (`ctrl-shift-c` or in right-click menu)
+ - Find references (`ctrl-alt-shift-f` or `cmd-opt-shift-f` also in context menu)
+ - Format file with rustfmt (`ctrl-shift-c` or `cmd-shift-c` also in context menu)
  - Format on save (disabled by default, see `atom-ide-ui` settings)
  - Rls toolchain selection in package settings
  - Rls toolchain update checking at startup & every 6 hours thereafter
