@@ -9,7 +9,8 @@ Rust language support for Atom-IDE, powered by the Rust Language Server (RLS).
  - Document outline
  - Go to definition (`ctrl` or `cmd` click)
  - Type information and Documentation on hover (hold `ctrl` or `cmd` for more information)
- - Find references (`ctrl-alt-shift-F` or in right-click menu)
+ - Find references (`ctrl-alt-shift-f` or in right-click menu)
+ - Format file with rustfmt (`ctrl-shift-c` or in right-click menu)
  - Format on save (disabled by default, see `atom-ide-ui` settings)
  - Rls toolchain selection in package settings
  - Rls toolchain update checking at startup & every 6 hours thereafter
