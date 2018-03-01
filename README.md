@@ -14,7 +14,7 @@ Rust language support for Atom-IDE, powered by the Rust Language Server (RLS).
  - Format on save (disabled by default, see `atom-ide-ui` settings)
  - Rls toolchain selection in package settings
  - Rls toolchain update checking at startup & every 6 hours thereafter
- - Global Rls configuration for `all_targets`, `all_features`
+ - Global Rls configuration for `all_targets`
  - Per-project Rls configuration using `rls.toml` file at project root, see [rls#configuration](https://github.com/rust-lang-nursery/rls#configuration)
    ```toml
    # rls.toml
