@@ -11,7 +11,7 @@ module.exports = {
   rules: {
     semi: ["warn", "never"],
     "no-unused-vars": "warn",
-    "no-console": ["warn", { allow: ["info", "warn", "error"] }],
+    "no-console": ["warn", { allow: ["debug", "info", "warn", "error"] }],
     "valid-jsdoc": ["warn", {
       requireParamDescription: false,
       requireReturn: false,
