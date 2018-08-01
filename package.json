@@ -24,10 +24,10 @@
     "underscore-plus": "^1.6.8"
   },
   "devDependencies": {
-    "eslint": "^4.19.1"
+    "eslint": "^5.2.0"
   },
   "scripts": {
-    "test": "eslint lib test --max-warnings 0"
+    "test": "eslint lib --max-warnings 0"
   },
   "enhancedScopes": [
     "source.rust"
