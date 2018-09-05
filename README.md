@@ -48,6 +48,18 @@ members = [
 ]
 ```
 
+Even if you only have a single crate in your Atom project, RLS can only detect it if you
+have a root `Cargo.toml`. If your project is setup such that you have one or more crate nested
+in folders under the root, you can add a root `Cargo.toml` file and setup a Cargo workspace that
+includes all the crates in the project:
+```toml
+# Cargo.toml
+[workspace]
+members = [
+    "foo/bar/rust_foo",
+]
+```
+
 ## Overriding Rls
 The Rls command can be specified manually, for example to run from local source code:
 ```cson
