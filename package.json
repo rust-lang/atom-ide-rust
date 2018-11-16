@@ -11,7 +11,6 @@
     "ide"
   ],
   "package-deps": [
-    "language-rust",
     "atom-ide-ui"
   ],
   "engines": {
