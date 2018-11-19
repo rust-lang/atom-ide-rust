@@ -14,7 +14,7 @@
     "atom-ide-ui"
   ],
   "engines": {
-    "atom": ">=1.21.0"
+    "atom": ">=1.33.0"
   },
   "dependencies": {
     "atom-languageclient": "^0.9.8",
