@@ -1,7 +1,7 @@
 {
   "name": "ide-rust",
   "main": "./lib/index",
-  "version": "0.19.0",
+  "version": "0.19.1",
   "description": "Rust language support for Atom-IDE",
   "repository": "https://github.com/rust-lang/atom-ide-rust",
   "license": "MIT",
