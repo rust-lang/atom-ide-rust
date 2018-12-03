@@ -23,6 +23,7 @@ Rust language support for Atom-IDE, powered by the Rust Language Server (RLS).
  - Graceful handling of Rls being missing from the distribution _(which is/was somewhat common on the nightly channel)_
    * Warns before installing a rust version without Rls or when using an already installed one
    * Automatic detection of, and prompt to install, the latest working dated release
+ - Rust language snippets
 
 ## Install
 You can install from the command line with:
