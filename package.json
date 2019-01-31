@@ -19,11 +19,11 @@
   "dependencies": {
     "atom-languageclient": "^0.9.9",
     "atom-package-deps": "^5.0.0",
-    "toml": "^2.3.5",
+    "toml": "^3.0.0",
     "underscore-plus": "^1.6.8"
   },
   "devDependencies": {
-    "eslint": "^5.12.0"
+    "eslint": "^5.12.1"
   },
   "scripts": {
     "test": "eslint lib --max-warnings 0"
