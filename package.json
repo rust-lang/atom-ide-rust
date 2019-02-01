@@ -23,7 +23,7 @@
     "underscore-plus": "^1.6.8"
   },
   "devDependencies": {
-    "eslint": "^5.12.1"
+    "eslint": "^5.13.0"
   },
   "scripts": {
     "test": "eslint lib --max-warnings 0"
