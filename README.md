@@ -1,77 +1,34 @@
 # IDE-Rust
-Rust language support for Atom-IDE, powered by the Rust Language Server (RLS).
-
-![](http://image.ibb.co/gwfQTm/output.gif "Usage Jan-2018")
+Rust language support for Atom-IDE, powered by [rust-analyzer](https://github.com/rust-analyzer/rust-analyzer).
 
 ## Features
  - Auto-completion
- - Diagnostics (errors and warnings from `rustc` and `clippy`, see `clippy_preference` setting)
+ - Diagnostics (errors and warnings from `rustc`)
  - Document outline
  - Go to definition (`ctrl` or `cmd` click)
  - Type information and Documentation on hover (hold `ctrl` or `cmd` for more information)
  - Find references (`ctrl-alt-shift-f` or `cmd-opt-shift-f` also in context menu)
  - Format file with rustfmt (`ctrl-shift-c` or `cmd-shift-c` also in context menu)
  - Format on save (disabled by default, see `atom-ide-ui` settings)
- - Supports rustup default & override toolchains, or manually select rls toolchain in package settings
- - Rls toolchain update checking at startup & every 6 hours thereafter
- - Global Rls configuration for `all_targets`, `clippy_preference`
- - Per-project Rls configuration using `rls.toml` file at project root, see [rls#configuration](https://github.com/rust-lang-nursery/rls#configuration)
-   ```toml
-   # rls.toml
-   features = ["serde"]
-   ```
- - Graceful handling of Rls being missing from the distribution _(which is/was somewhat common on the nightly channel)_
-   * Warns before installing a rust version without Rls or when using an already installed one
-   * Automatic detection of, and prompt to install, the latest working dated release
+ - Rustup toolchain update checking at startup & every 6 hours thereafter
+ - Supports rustup override toolchains
  - Rust language snippets
 
 ## Install
-You can install from the command line with:
+Install from Settings view by searching for `ide-rust`, or with the command line:
 ```
 $ apm install ide-rust
 ```
-Or you can install from Settings view by searching for `ide-rust`.
 
-No other packages or manual setup is required as these will be handled with user prompts after install. However, you may wish to install `rustup` with your OS package manager instead of following prompts to install via [rustup.rs](https://rustup.rs).
+### Prerequisites
+**rust-analyzer** must be installed manually, if possible on the PATH _(otherwise configure this in the package settings)_.
+See https://rust-analyzer.github.io/manual.html#rust-analyzer-language-server-binary.
+
+No other packages or manual setup is required as these will be handled with user prompts after install.
+However, you may wish to install `rustup` with your OS package manager instead of following prompts to install via [rustup.rs](https://rustup.rs).
 
 ## Commands
 - `ide-rust:restart-all-language-servers` Restart all currently active Rls processes
-
-## Multi-crate projects
-A root `Cargo.toml` is required in each atom project, however cargo workspaces can be used to support multiple crates in a single project.
-For example, a project with *'rust_foo'* & *'rust_bar'* directories/crates could have the following root `Cargo.toml`
-```toml
-# Cargo.toml
-[workspace]
-members = [
-    "rust_foo",
-    "rust_bar",
-]
-```
-
-Even if you only have a single crate in your Atom project, RLS can only detect it if you
-have a root `Cargo.toml`. If your project is setup such that you have one or more crate nested
-in folders under the root, you can add a root `Cargo.toml` file and setup a Cargo workspace that
-includes all the crates in the project:
-```toml
-# Cargo.toml
-[workspace]
-members = [
-    "foo/bar/rust_foo",
-]
-```
-
-## Overriding Rls
-The Rls command can be specified manually, for example to run from local source code:
-```cson
-# config.cson
-  ...
-  "ide-rust":
-    rlsCommandOverride: "cargo +nightly run --manifest-path=/rls-src/Cargo.toml"
-```
-When set you'll be able to see, and remove, this from the package settings. After restarting atom an info message will inform you the override is in place.
-
-![](https://image.ibb.co/jsR65w/rls_Command_Override_Info.png)
 
 ## Debugging IDE-Rust
 If stuff isn't working you can try **enabling logging** to debug:
@@ -80,6 +37,9 @@ If stuff isn't working you can try **enabling logging** to debug:
   * Reload atom _(ctrl-shift-F5)_
 
 This will spit out language server message logging into the atom console. Check if requests/responses are being sent or are incorrect. It will also include any Rls stderr messages (as warnings) which may point to Rls bugs.
+
+## RLS
+RLS is no longer supported. To use RLS install a previous version of ide-rust, `apm install ide-rust@0.21.2`.
 
 ## License
 MIT License. See the [license](LICENSE) for more details.
