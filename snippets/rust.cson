@@ -21,6 +21,12 @@
       \t$2
       }
     '''
+  'eprint':
+    'prefix': 'eprint'
+    'body': 'eprint!("${1:{${2::?}\\}}", ${3});'
+  'eprintln':
+    'prefix': 'eprintln'
+    'body': 'eprintln!("${1:{${2::?}\\}}", ${3});'
   'fn':
     'prefix': 'fn'
     'body': '''
@@ -124,6 +130,9 @@
       \t}
       }
     '''
+  'todo':
+    'prefix': 'todo'
+    'body': 'todo!($1)$2'
   'trait':
     'prefix': 'trait'
     'body': '''
@@ -134,6 +143,12 @@
   'type':
     'prefix': 'type'
     'body': 'type ${1:TypeName} = ${2:TypeName};'
+  'unimplemented':
+    'prefix': 'unimplemented'
+    'body': 'unimplemented!($1)$2'
+  'unreachable':
+    'prefix': 'unreachable'
+    'body': 'unreachable!($1)$2'
   'warn':
     'prefix': 'warn'
     'body': '#[warn(${1:lint})]'
