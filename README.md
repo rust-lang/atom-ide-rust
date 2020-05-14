@@ -36,7 +36,7 @@ If stuff isn't working you can try **enabling logging** to debug:
   * Enter `atom.config.set('core.debugLSP', true)`
   * Reload atom _(ctrl-shift-F5)_
 
-This will spit out language server message logging into the atom console. Check if requests/responses are being sent or are incorrect. It will also include any Rls stderr messages (as warnings) which may point to Rls bugs.
+This will spit out language server message logging into the atom console. Check if requests/responses are being sent or are incorrect.
 
 ## RLS
 RLS is no longer supported. To use RLS install a previous version of ide-rust, `apm install ide-rust@0.21.2`.
