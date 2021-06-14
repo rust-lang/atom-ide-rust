@@ -11,7 +11,7 @@
     "ide"
   ],
   "package-deps": [
-    "atom-ide-ui"
+    "atom-ide-base"
   ],
   "engines": {
     "atom": ">=1.33.0"
