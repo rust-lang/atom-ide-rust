@@ -11,14 +11,14 @@
     "ide"
   ],
   "package-deps": [
-    "atom-ide-ui"
+    "atom-ide-base"
   ],
   "engines": {
     "atom": ">=1.33.0"
   },
   "dependencies": {
-    "atom-languageclient": "github:alexheretic/atom-languageclient#build",
-    "atom-package-deps": "^5.1.0",
+    "atom-languageclient": "^1.14.0",
+    "atom-package-deps": "^7.2.3",
     "toml": "^3.0.0",
     "underscore-plus": "^1.7.0"
   },
