@@ -41,5 +41,23 @@ This will spit out language server message logging into the atom console. Check 
 ## RLS
 RLS is no longer supported. To use RLS install a previous version of ide-rust, `apm install ide-rust@0.21.2`.
 
+## Screenshots
+**Autocomplete**:
+
+![Autocomplete image](https://user-images.githubusercontent.com/16418197/121962919-01114c80-cd2f-11eb-8136-11ba82ebe543.png)
+
+**Datatips**:
+
+![Datatips image](https://user-images.githubusercontent.com/16418197/121962751-c7404600-cd2e-11eb-84dd-eff95743a0d3.png)
+
+**Linter**:
+
+![Linter image](https://user-images.githubusercontent.com/16418197/121962803-d7582580-cd2e-11eb-9742-040b78ca75d2.png)
+
+**Outline**:
+
+![Outline image](https://user-images.githubusercontent.com/16418197/121962765-cd362700-cd2e-11eb-92b2-74516cd734db.png)
+
+
 ## License
 MIT License. See the [license](LICENSE) for more details.
