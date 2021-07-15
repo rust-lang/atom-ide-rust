@@ -23,6 +23,7 @@
     "underscore-plus": "^1.7.0"
   },
   "devDependencies": {
+    "atom-jasmine3-test-runner": "^5.2.7",
     "eslint-config-atomic": "^1.16.1"
   },
   "scripts": {
@@ -32,6 +33,7 @@
     "test.lint": "eslint .",
     "test": "atom --test spec"
   },
+  "atomTestRunner": "./spec/runner",
   "enhancedScopes": [
     "source.rust"
   ],
