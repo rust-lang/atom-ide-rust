@@ -33,8 +33,8 @@ jobs:
           apm install --production
           npm install --only=dev
 
-      # - name: Run tests 👩🏾‍💻
-      #   run: npm run lint
+      - name: Run tests 👩🏾‍💻
+        run: npm run lint
 
   Lint:
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
