@@ -24,7 +24,8 @@
   },
   "devDependencies": {
     "atom-jasmine3-test-runner": "^5.2.7",
-    "eslint-config-atomic": "^1.16.2"
+    "eslint-config-atomic": "^1.16.2",
+    "prettier-config-atomic": "^2.0.5"
   },
   "scripts": {
     "format": "prettier --write .",
@@ -33,6 +34,7 @@
     "test.lint": "eslint .",
     "test": "atom --test spec"
   },
+  "prettier": "prettier-config-atomic",
   "atomTestRunner": "./spec/runner",
   "enhancedScopes": [
     "source.rust"
