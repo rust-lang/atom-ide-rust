@@ -24,6 +24,8 @@ $ apm install ide-rust
 **rust-analyzer** must be installed manually, if possible on the PATH _(otherwise configure this in the package settings)_.
 See https://rust-analyzer.github.io/manual.html#rust-analyzer-language-server-binary.
 
+NOTE: On Windows, you can install it using [choco](https://chocolatey.org/install): `choco install rust-analyzer`
+
 No other packages or manual setup is required as these will be handled with user prompts after install.
 However, you may wish to install `rustup` with your OS package manager instead of following prompts to install via [rustup.rs](https://rustup.rs).
 
