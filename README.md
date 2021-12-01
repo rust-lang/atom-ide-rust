@@ -34,6 +34,27 @@ NOTE: On Windows, you can install it using [choco](https://chocolatey.org/instal
 No other packages or manual setup is required as these will be handled with user prompts after install.
 However, you may wish to install `rustup` with your OS package manager instead of following prompts to install via [rustup.rs](https://rustup.rs).
 
+## Configure rust-analyzer
+
+**rust-analyzer** settings can be stored in a JSON file located at `.ide-rust/rust-analyzer.json` relative to the project directory.
+
+### Example
+
+`.ide-rust/rust-analyzer.json`
+
+```json
+{
+    "cargo": {
+        "loadOutDirsFromCheck": true,
+    },
+    "procMacro": {
+        "enable": true,
+    }
+}
+```
+
+Refer to the [rust-analyzer User Manual](https://rust-analyzer.github.io/manual.html#configuration) for the supported config options.
+
 ## Commands
 
 - `ide-rust:restart-all-language-servers` Restart all currently active Rls processes
