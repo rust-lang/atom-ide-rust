@@ -36,11 +36,14 @@ However, you may wish to install `rustup` with your OS package manager instead o
 
 ## Configure rust-analyzer
 
-**rust-analyzer** settings can be stored in a JSON file located at `.ide-rust/rust-analyzer.json` relative to the project directory.
+**rust-analyzer** settings can be stored in a JSON file in the project directory.
+
+It first looks for `rust-analyzer.json`.
+If the file does not exists, it then checks `.config/rust-analyzer.json`.
 
 ### Example
 
-`.ide-rust/rust-analyzer.json`
+`.config/rust-analyzer.json`
 
 ```json
 {
