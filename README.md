@@ -41,11 +41,11 @@ However, you may wish to install `rustup` with your OS package manager instead o
 It first looks for `rust-analyzer.json`.
 If the file does not exists, it then checks `.config/rust-analyzer.json`.
 
-Refer to the [rust-analyzer User Manual](https://rust-analyzer.github.io/manual.html#configuration) for the supported config options.
+Refer to the rust-analyzer [User Manual](https://rust-analyzer.github.io/manual.html#configuration) for the supported config options.
 
 ### Examples
 
-#### enable proc-macro support (from the [rust-analyzer User Manual](https://rust-analyzer.github.io/manual.html#configuration))
+#### enable proc-macro support (from the [User Manual](https://rust-analyzer.github.io/manual.html#configuration))
 
 ```json
 {
