@@ -63,7 +63,7 @@ Refer to the rust-analyzer [User Manual](https://rust-analyzer.github.io/manual.
 ```json
 {
     "rustfmt": {
-        "overrideCommand": "cargo +nightly fmt"
+        "extraArgs": ["+nightly"]
     }
 }
 ```
