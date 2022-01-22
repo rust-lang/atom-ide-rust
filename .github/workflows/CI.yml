@@ -35,7 +35,7 @@ jobs:
 
   Lint:
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
-    name: ${{ matrix.os }} - Atom ${{ matrix.atom_channel }}
+    name: ${{ matrix.os }} - Lint
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
